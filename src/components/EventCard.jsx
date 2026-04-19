@@ -14,36 +14,6 @@ const EventCard = ({ title, date, location, image, time, index }) => {
       {/* Image */}
       <div className="event-card-image">
         <img src={image} alt={title} loading="lazy" />
-        {/* Text overlay on image */}
-        <div style={{
-          position: 'absolute',
-          inset: 0,
-          zIndex: 2,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%)',
-          padding: '2rem',
-          textAlign: 'center',
-        }}>
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3 + index * 0.15 }}
-            style={{
-              fontFamily: 'var(--font-display)',
-              fontSize: 'clamp(1.5rem, 4vw, 2.5rem)',
-              color: '#fff',
-              textShadow: '0 2px 20px rgba(0,0,0,0.6)',
-              letterSpacing: '0.15em',
-              textTransform: 'uppercase',
-            }}
-          >
-            {title}
-          </motion.p>
-        </div>
       </div>
 
       {/* Body */}
