@@ -6,35 +6,35 @@ import { ArrowLeft, Heart } from 'lucide-react';
 
 // Reliable dummy images from picsum
 const IMAGES = {
-  mehndi: 'https://picsum.photos/seed/mehndi-card/600/750',
-  barat: 'https://picsum.photos/seed/barat-card/600/750',
-  walima: 'https://picsum.photos/seed/walima-card/600/750',
+  mehndi: '/mehndi.png',
+  barat: '/barat.png',
+  walima: '/walima.png',
 };
 
 const allEvents = [
   {
     id: 'mehndi',
-    title: 'Mehndi Night',
+    title: 'Mehndi',
     date: 'Friday, May 02, 2026',
-    location: 'Grand Emerald Hall',
+    location: 'Kamoki, Gujranwala',
     image: IMAGES.mehndi,
-    time: '07:00 PM Onwards',
+    time: '',
   },
   {
     id: 'barat',
-    title: 'Barat Ceremony',
+    title: 'Barat',
     date: 'Saturday, May 03, 2026',
-    location: 'Royal Banquet Hall',
+    location: 'Al-Naeem Marriage Hall',
     image: IMAGES.barat,
-    time: '08:00 PM Onwards',
+    time: '05 PM to 09 PM',
   },
   {
     id: 'walima',
-    title: 'Walima Reception',
+    title: 'Walima',
     date: 'Sunday, May 04, 2026',
-    location: 'Palatial Ballroom',
+    location: 'Al Madni Banquet Hall, Kamoke',
     image: IMAGES.walima,
-    time: '08:30 PM Onwards',
+    time: '05 PM to 09 PM',
   },
 ];
 

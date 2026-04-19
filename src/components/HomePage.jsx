@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Heart, Calendar, MapPin, Clock, Sparkles, Star } from 'lucide-react';
 
-const HERO_IMG = 'https://picsum.photos/seed/wedding-hero/1400/900';
-const MEHNDI_IMG = 'https://picsum.photos/seed/mehndi-event/600/400';
-const BARAT_IMG = 'https://picsum.photos/seed/barat-event/600/400';
-const WALIMA_IMG = 'https://picsum.photos/seed/walima-event/600/400';
+const HERO_IMG = '/mehndi.png';
+const MEHNDI_IMG = '/mehndi.png';
+const BARAT_IMG = '/barat.png';
+const WALIMA_IMG = '/walima.png';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -19,30 +19,30 @@ const fadeUp = {
 
 const events = [
   {
-    title: 'Mehndi Night',
+    title: 'Mehndi',
     date: 'Friday, May 02',
-    time: '7:00 PM',
-    venue: 'Grand Emerald Hall',
+    time: '',
+    venue: 'Kamoki, Gujranwala',
     image: MEHNDI_IMG,
     color: '#c5a059',
     desc: 'An evening of colors, music, and traditional celebration.',
   },
   {
-    title: 'Barat Ceremony',
+    title: 'Barat',
     date: 'Saturday, May 03',
-    time: '8:00 PM',
-    venue: 'Royal Banquet Hall',
+    time: '05 PM to 09 PM',
+    venue: 'Al-Naeem Marriage Hall',
     image: BARAT_IMG,
-    color: '#d4af37',
+    color: '#8b1a2b',
     desc: 'The grand procession and the union of two souls.',
   },
   {
-    title: 'Walima Reception',
+    title: 'Walima',
     date: 'Sunday, May 04',
-    time: '8:30 PM',
-    venue: 'Palatial Ballroom',
+    time: '05 PM to 09 PM',
+    venue: 'Al Madni Banquet Hall, Kamoke',
     image: WALIMA_IMG,
-    color: '#c9707d',
+    color: '#4a6fa5',
     desc: 'A lavish feast celebrating the newlywed couple.',
   },
 ];
