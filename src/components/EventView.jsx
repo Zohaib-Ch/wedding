@@ -40,11 +40,23 @@ const allEvents = [
 
 const EventView = ({ type }) => {
   const displayedEvents =
-    type === '3-day' ? allEvents : allEvents.filter((e) => e.id !== 'barat');
+    type === 'walima-only'
+      ? allEvents.filter((e) => e.id === 'walima')
+      : type === '3-day'
+      ? allEvents
+      : allEvents.filter((e) => e.id !== 'barat');
 
-  const pageTitle = type === '3-day' ? 'Full Celebration' : 'Main Events';
+  const pageTitle =
+    type === 'walima-only'
+      ? 'Reception Only'
+      : type === '3-day'
+      ? 'Full Celebration'
+      : 'Main Events';
+
   const pageSubtitle =
-    type === '3-day'
+    type === 'walima-only'
+      ? "Join us for the Walima Ceremony"
+      : type === '3-day'
       ? 'The Complete Three-Day Wedding Celebration'
       : 'Mehndi & Walima — The Core Ceremonies';
 

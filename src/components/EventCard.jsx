@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, Clock } from 'lucide-react';
+import { Calendar, MapPin, Clock, Phone } from 'lucide-react';
 
 const EventCard = ({ title, date, location, image, time, index }) => {
   return (
@@ -39,11 +39,46 @@ const EventCard = ({ title, date, location, image, time, index }) => {
           <span style={{ fontStyle: 'italic' }}>{location}</span>
         </div>
 
+        <div className="ornament" style={{ maxWidth: '60px', margin: '2rem auto 1.5rem' }} />
+
+        <div className="contact-section" style={{ marginTop: '1rem' }}>
+          <p style={{
+            fontFamily: 'var(--font-sans)',
+            fontSize: '0.65rem',
+            letterSpacing: '0.2em',
+            color: 'var(--text-muted)',
+            textTransform: 'uppercase',
+            marginBottom: '1rem'
+          }}>
+            Contact for Details
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            <motion.a
+              href="tel:03016459274"
+              whileHover={{ scale: 1.05, color: 'var(--gold-light)' }}
+              className="event-detail-row"
+              style={{ margin: 0, textDecoration: 'none' }}
+            >
+              <Phone size={14} />
+              <span style={{ letterSpacing: '0.1em', fontWeight: 500 }}>0301 6459274</span>
+            </motion.a>
+            <motion.a
+              href="tel:03016411063"
+              whileHover={{ scale: 1.05, color: 'var(--gold-light)' }}
+              className="event-detail-row"
+              style={{ margin: 0, textDecoration: 'none' }}
+            >
+              <Phone size={14} />
+              <span style={{ letterSpacing: '0.1em', fontWeight: 500 }}>0301 6411063</span>
+            </motion.a>
+          </div>
+        </div>
+
         <motion.p
           whileHover={{ letterSpacing: '0.35em' }}
           transition={{ duration: 0.4 }}
           style={{
-            marginTop: '2rem',
+            marginTop: '2.5rem',
             fontFamily: 'var(--font-sans)',
             fontSize: '0.6rem',
             fontWeight: 500,

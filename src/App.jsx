@@ -24,6 +24,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/invite" element={<EventView type="3-day" />} />
             <Route path="/invitation" element={<EventView type="2-day" />} />
+            <Route path="/friends" element={<EventView type="walima-only" />} />
           </Routes>
         </AnimatePresence>
       )}
