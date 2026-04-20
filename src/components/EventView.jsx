@@ -1,8 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import EventCard from './EventCard';
-import { ArrowLeft, Heart } from 'lucide-react';
+import { Heart } from 'lucide-react';
 
 // Reliable dummy images from picsum
 const IMAGES = {
@@ -69,19 +68,15 @@ const EventView = ({ type }) => {
       className="event-page"
     >
       <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
-        {/* Navigation */}
+        {/* Header */}
         <motion.header
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="event-page-header"
+          style={{ justifyContent: 'center' }}
         >
-          <Link to="/" className="back-link">
-            <ArrowLeft size={16} />
-            Home
-          </Link>
-
-          <div style={{ textAlign: 'right' }}>
+          <div style={{ textAlign: 'center' }}>
             <h2
               className="gold-text"
               style={{

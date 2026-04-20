@@ -801,7 +801,7 @@ a:hover {
    ═══════════════════════════════════════ */
 .event-page-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 4rem;
   padding-bottom: 2rem;
