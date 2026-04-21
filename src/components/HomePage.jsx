@@ -20,7 +20,7 @@ const fadeUp = {
 const events = [
   {
     title: 'Mehndi',
-    date: 'Friday, May 02',
+    date: 'Saturday, May 02',
     time: '',
     venue: 'Kamoki, Gujranwala',
     image: MEHNDI_IMG,
@@ -29,7 +29,7 @@ const events = [
   },
   {
     title: 'Barat',
-    date: 'Saturday, May 03',
+    date: 'Sunday, May 03',
     time: '05 PM to 09 PM',
     venue: 'Al-Naeem Marriage Hall',
     image: BARAT_IMG,
@@ -38,7 +38,7 @@ const events = [
   },
   {
     title: 'Walima',
-    date: 'Sunday, May 04',
+    date: 'Monday, May 04',
     time: '05 PM to 09 PM',
     venue: 'Al Madni Banquet Hall, Kamoke',
     image: WALIMA_IMG,

@@ -14,7 +14,7 @@ const allEvents = [
   {
     id: 'mehndi',
     title: 'Mehndi',
-    date: 'Friday, May 02, 2026',
+    date: 'Saturday, May 02, 2026',
     location: 'Kamoki, Gujranwala',
     image: IMAGES.mehndi,
     time: '',
@@ -22,7 +22,7 @@ const allEvents = [
   {
     id: 'barat',
     title: 'Barat',
-    date: 'Saturday, May 03, 2026',
+    date: 'Sunday, May 03, 2026',
     location: 'Al-Naeem Marriage Hall',
     image: IMAGES.barat,
     time: '05 PM to 09 PM',
@@ -30,7 +30,7 @@ const allEvents = [
   {
     id: 'walima',
     title: 'Walima',
-    date: 'Sunday, May 04, 2026',
+    date: 'Monday, May 04, 2026',
     location: 'Al Madni Banquet Hall, Kamoke',
     image: IMAGES.walima,
     time: '05 PM to 09 PM',
