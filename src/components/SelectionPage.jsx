@@ -12,16 +12,16 @@ const SelectionPage = () => {
       title: 'Full Celebration',
       subtitle: 'Three Days of Joy',
       events: ['Mehndi', 'Barat', 'Walima'],
-      dates: 'May 02 – 04, 2026',
-      path: '/events/3-day',
+      dates: 'May 30 – June 01, 2026',
+      path: '/tayyab-3day',
     },
     {
       icon: <Sparkles size={28} strokeWidth={1} />,
       title: 'Main Events',
       subtitle: 'The Ceremony Highlights',
       events: ['Mehndi', 'Walima'],
-      dates: 'May 02 & 04, 2026',
-      path: '/events/2-day',
+      dates: 'May 30 & June 01, 2026',
+      path: '/tayyab-mehndi-walima',
     },
   ];
 
@@ -49,7 +49,7 @@ const SelectionPage = () => {
           marginBottom: '1.5rem',
           textTransform: 'uppercase',
         }}>
-          The Wedding of Muhammad Sufyan
+          The Wedding of Muhammad Tayyab
         </p>
         <h2 className="gold-text" style={{
           fontFamily: 'var(--font-display)',
@@ -171,7 +171,7 @@ const SelectionPage = () => {
           color: 'var(--text-muted)',
           textTransform: 'uppercase',
         }}>
-          S/O Muhammad Amin
+          S/O Muhammad Yaqoob
         </p>
       </motion.footer>
     </motion.div>

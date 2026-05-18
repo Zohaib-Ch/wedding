@@ -138,10 +138,10 @@ const SplashIntro = ({ onComplete }) => {
             marginBottom: '0.5rem',
           }}
         >
-          Muhammad Sufyan
+          Muhammad Tayyab
         </motion.h1>
 
-        {/* Weds */}
+        {/* S/O */}
         <motion.p
           initial={{ opacity: 0, scale: 0.5 }}
           animate={phase >= 1 ? { opacity: 1, scale: 1 } : {}}
@@ -155,10 +155,10 @@ const SplashIntro = ({ onComplete }) => {
             margin: '1rem 0',
           }}
         >
-          Weds
+          S/O
         </motion.p>
 
-        {/* Bride */}
+        {/* Father Name */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           animate={phase >= 1 ? { opacity: 1, y: 0 } : {}}
@@ -171,7 +171,7 @@ const SplashIntro = ({ onComplete }) => {
             marginBottom: '0.5rem',
           }}
         >
-          D/O Muhammad Amin
+          Muhammad Yaqoob
         </motion.h2>
 
         {/* Ornament */}
@@ -198,7 +198,7 @@ const SplashIntro = ({ onComplete }) => {
             marginBottom: '3rem',
           }}
         >
-          <span style={{ color: 'var(--gold-light)' }}>02</span> — <span style={{ color: 'var(--gold-light)' }}>03</span> — <span style={{ color: 'var(--gold-light)' }}>04</span> May 2026
+          <span style={{ color: 'var(--gold-light)' }}>30</span> May — <span style={{ color: 'var(--gold-light)' }}>01</span> June 2026
         </motion.div>
 
         {/* Ornament before button */}

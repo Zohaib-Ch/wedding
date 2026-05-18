@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Heart, Calendar, MapPin, Clock, Sparkles, Star } from 'lucide-react';
 
-const HERO_IMG = '/mehndi.png';
-const MEHNDI_IMG = '/mehndi.png';
-const BARAT_IMG = '/barat.png';
-const WALIMA_IMG = '/walima.png';
+const HERO_IMG = '/mehndi.jpeg';
+const MEHNDI_IMG = '/mehndi.jpeg';
+const BARAT_IMG = '/barat.jpeg';
+const WALIMA_IMG = '/walima.jpeg';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -20,27 +20,27 @@ const fadeUp = {
 const events = [
   {
     title: 'Mehndi',
-    date: 'Saturday, May 02',
+    date: 'Saturday, May 30',
     time: '',
-    venue: 'Kamoki, Gujranwala',
+    venue: 'Illyas Colony Khiyali Gujranwala',
     image: MEHNDI_IMG,
     color: '#c5a059',
     desc: 'An evening of colors, music, and traditional celebration.',
   },
   {
     title: 'Barat',
-    date: 'Sunday, May 03',
-    time: '05 PM to 09 PM',
-    venue: 'Al-Naeem Marriage Hall',
+    date: 'Sunday, May 31',
+    time: '06 PM to 10 PM',
+    venue: 'Decorium Marquee, G.T Road Gujranwala',
     image: BARAT_IMG,
     color: '#8b1a2b',
     desc: 'The grand procession and the union of two souls.',
   },
   {
     title: 'Walima',
-    date: 'Monday, May 04',
-    time: '05 PM to 09 PM',
-    venue: 'Al Madni Banquet Hall, Kamoke',
+    date: 'Monday, June 01',
+    time: '12 PM to 04 PM',
+    venue: 'Yashwa Marriage Hall, Sheikhupura Road, Khiyali Gujranwala',
     image: WALIMA_IMG,
     color: '#4a6fa5',
     desc: 'A lavish feast celebrating the newlywed couple.',
@@ -82,7 +82,7 @@ const HomePage = () => {
             variants={fadeUp} initial="hidden" animate="visible" custom={2}
             className="gold-text hero-title"
           >
-            Muhammad Sufyan
+            Muhammad Tayyab
           </motion.h1>
 
           <motion.p
@@ -96,7 +96,7 @@ const HomePage = () => {
               margin: '0.5rem 0',
             }}
           >
-            Weds
+            S/O
           </motion.p>
 
           <motion.h2
@@ -108,7 +108,7 @@ const HomePage = () => {
               lineHeight: 1.1,
             }}
           >
-            D/O Muhammad Amin
+            Muhammad Yaqoob
           </motion.h2>
 
           <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={5}>
@@ -119,7 +119,7 @@ const HomePage = () => {
             variants={fadeUp} initial="hidden" animate="visible" custom={6}
             className="hero-date"
           >
-            <span>02</span> — <span>03</span> — <span>04</span> May 2026
+            <span>30</span> May — <span>01</span> June 2026
           </motion.p>
 
           <motion.div
@@ -157,12 +157,12 @@ const HomePage = () => {
           <motion.p variants={fadeUp} custom={3} className="welcome-text">
             With immense happiness and the blessings of the Almighty, we invite you 
             to share in the joy of the wedding celebration of our beloved son,{' '}
-            <strong style={{ color: 'var(--gold-light)' }}>Muhammad Sufyan</strong>.
+            <strong style={{ color: 'var(--gold-light)' }}>Muhammad Tayyab</strong>.
             Your gracious presence will be a blessing and an honor for our family.
           </motion.p>
 
           <motion.p variants={fadeUp} custom={4} className="welcome-family">
-            — Family of Muhammad Sufyan —
+            — Family of Muhammad Tayyab —
           </motion.p>
         </motion.div>
       </section>
@@ -248,14 +248,18 @@ const HomePage = () => {
             <div className="ornament" />
           </motion.div>
 
-          <motion.div variants={fadeUp} custom={3} className="invite-links">
-            <Link to="/invite" className="btn-luxury">
+          <motion.div variants={fadeUp} custom={3} className="invite-links" style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center' }}>
+            <Link to="/tayyab-3day" className="btn-luxury">
               <Sparkles size={14} style={{ marginRight: '0.5rem' }} />
               Full Celebration — 3 Days
             </Link>
-            <Link to="/invitation" className="btn-luxury btn-luxury-alt">
+            <Link to="/tayyab-mehndi-walima" className="btn-luxury btn-luxury-alt">
               <Star size={14} style={{ marginRight: '0.5rem' }} />
-              Main Events — 2 Days
+              Mehndi & Walima — 2 Days
+            </Link>
+            <Link to="/tayyab-walima" className="btn-luxury btn-luxury-alt">
+              <Heart size={14} style={{ marginRight: '0.5rem' }} />
+              Walima Only — 1 Day
             </Link>
           </motion.div>
         </motion.div>
@@ -268,8 +272,8 @@ const HomePage = () => {
         <div className="ornament-double">
           <div className="ornament-diamond" />
         </div>
-        <p className="footer-names gold-text">Muhammad Sufyan</p>
-        <p className="footer-sub" style={{ fontStyle: 'italic' }}>Weds D/O Muhammad Amin</p>
+        <p className="footer-names gold-text">Muhammad Tayyab</p>
+        <p className="footer-sub" style={{ fontStyle: 'italic' }}>S/O Muhammad Yaqoob</p>
         <p className="footer-date">May 2026</p>
       </footer>
     </motion.div>

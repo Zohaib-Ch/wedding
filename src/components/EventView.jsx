@@ -5,35 +5,35 @@ import { Heart } from 'lucide-react';
 
 // Reliable dummy images from picsum
 const IMAGES = {
-  mehndi: '/mehndi.png',
-  barat: '/barat.png',
-  walima: '/walima.png',
+  mehndi: '/mehndi.jpeg',
+  barat: '/barat.jpeg',
+  walima: '/walima.jpeg',
 };
 
 const allEvents = [
   {
     id: 'mehndi',
     title: 'Mehndi',
-    date: 'Saturday, May 02, 2026',
-    location: 'Kamoki, Gujranwala',
+    date: 'Saturday, May 30, 2026',
+    location: 'Illyas Colony Khiyali Gujranwala',
     image: IMAGES.mehndi,
     time: '',
   },
   {
     id: 'barat',
     title: 'Barat',
-    date: 'Sunday, May 03, 2026',
-    location: 'Al-Naeem Marriage Hall',
+    date: 'Sunday, May 31, 2026',
+    location: 'Decorium Marquee, G.T Road Gujranwala',
     image: IMAGES.barat,
-    time: '05 PM to 09 PM',
+    time: '06 PM to 10 PM',
   },
   {
     id: 'walima',
     title: 'Walima',
-    date: 'Monday, May 04, 2026',
-    location: 'Al Madni Banquet Hall, Kamoke',
+    date: 'Monday, June 01, 2026',
+    location: 'Yashwa Marriage Hall, Sheikhupura Road, Khiyali Gujranwala',
     image: IMAGES.walima,
-    time: '05 PM to 09 PM',
+    time: '12 PM to 04 PM',
   },
 ];
 
@@ -116,13 +116,13 @@ const EventView = ({ type }) => {
               marginBottom: '0.5rem',
             }}
           >
-            Muhammad Sufyan
+            Muhammad Tayyab
           </h1>
           <p className="font-serif" style={{ fontSize: '1.3rem', fontStyle: 'italic', color: 'var(--rose)', margin: '0.5rem 0' }}>
-            Weds
+            S/O
           </p>
           <h2 className="gold-text" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.2rem, 3vw, 2.2rem)' }}>
-            D/O Muhammad Amin
+            Muhammad Yaqoob
           </h2>
           <div className="ornament" style={{ marginTop: '2rem' }} />
         </motion.div>
@@ -150,7 +150,7 @@ const EventView = ({ type }) => {
             <div className="ornament-diamond" />
           </div>
           <p className="event-page-credits">
-            Muhammad Sufyan Weds D/O Muhammad Amin — May 2026
+            Muhammad Tayyab S/O Muhammad Yaqoob — May — June 2026
           </p>
         </motion.footer>
       </div>

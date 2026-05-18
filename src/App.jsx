@@ -22,9 +22,9 @@ function App() {
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<HomePage />} />
-            <Route path="/invite" element={<EventView type="3-day" />} />
-            <Route path="/invitation" element={<EventView type="2-day" />} />
-            <Route path="/friends" element={<EventView type="walima-only" />} />
+            <Route path="/tayyab-3day" element={<EventView type="3-day" />} />
+            <Route path="/tayyab-mehndi-walima" element={<EventView type="2-day" />} />
+            <Route path="/tayyab-walima" element={<EventView type="walima-only" />} />
           </Routes>
         </AnimatePresence>
       )}

@@ -54,22 +54,22 @@ const EventCard = ({ title, date, location, image, time, index }) => {
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <motion.a
-              href="tel:03016459274"
+              href="tel:03107273930"
               whileHover={{ scale: 1.05, color: 'var(--gold-light)' }}
               className="event-detail-row"
               style={{ margin: 0, textDecoration: 'none' }}
             >
               <Phone size={14} />
-              <span style={{ letterSpacing: '0.1em', fontWeight: 500 }}>0301 6459274</span>
+              <span style={{ letterSpacing: '0.1em', fontWeight: 500 }}>0310 7273930</span>
             </motion.a>
             <motion.a
-              href="tel:03016411063"
+              href="tel:03001325133"
               whileHover={{ scale: 1.05, color: 'var(--gold-light)' }}
               className="event-detail-row"
               style={{ margin: 0, textDecoration: 'none' }}
             >
               <Phone size={14} />
-              <span style={{ letterSpacing: '0.1em', fontWeight: 500 }}>0301 6411063</span>
+              <span style={{ letterSpacing: '0.1em', fontWeight: 500 }}>0300 1325133</span>
             </motion.a>
           </div>
         </div>
